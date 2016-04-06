@@ -4,13 +4,13 @@
 ; Por: Genicleito Gonçalves
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defun fatorial-cauda (n)
+(defun fatorial-cauda (n acum)
 	(cond
-		((<= n 1) 1)
-		(t (* n (fatorial (- n 1))))))
+		((<= n 1) acum)
+		(t (fatorial-cauda (- n 1) (* n acum)))))
 
 (defun fatorial (n)
-	(fatorial-cauda n))
+	(fatorial-cauda n 1))
 
 (print  (fatorial 3))
 (print  (fatorial 5))
