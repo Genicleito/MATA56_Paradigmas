@@ -4,12 +4,10 @@
 ; Por: Genicleito Gonçalves
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defun fib-acum (n a b)
+(defun fib-acum (n fib1 fib2)
   (cond
-    ((= n 0) a)
-    ;(t (((fib-acum (- n 1))))
-    ;(+ (fib (- n 1)) (fib (- n 2)))))
-    (fib-acum (- n 1) b (+ a b)))
+    ((= n 0) fib2)
+    (t (fib-acum (- n 1) fib2 (+ fib1 fib2)))))
 
 (defun fibonacci(n)
   (fib-acum n 0 1))
