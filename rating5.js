@@ -49,16 +49,7 @@ function rating5() {
                 "bookmark": [{ id:432534, time:65876586 }]
             }
         ];
-/*        videos = [];
+    return meuMap(meuFilter(newReleases, video => video.rating == 5), video => video.id);
 
-    newReleases.forEach(function(video) {
-        if (video.rating === 5.0) {
-            videos.push(video);
-        }
-    });
-*/
-    return meuMap(meuFilter(newReleases, video => video.rating == 5), video => ({id: video.id}));
-
-    //return videos;
 }
 console.log(rating5());
