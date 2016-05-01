@@ -19,14 +19,6 @@ function maiorBoxArtReduce() {
         }
     });
 
-/*    boxarts.forEach(function(boxart) {
-        currentSize = boxart.width * boxart.height;
-        if(currentSize > maxSize){
-            largestBoxart = currentSize;
-            maxSize = currentSize;
-        }
-    });
-*/
     return largestBoxart;
 }
 ufbassert(63750, maiorBoxArtReduce());
