@@ -4,7 +4,7 @@
 (defun fib-acum (n temp acum)
 	(cond
 		((= n 0) acum)
-		(t (fib-acum (- n 1) (acum) (+ temp acum)))
+		(t (fib-acum (- n 1) acum (+ temp acum)))
 	)
 )
 
