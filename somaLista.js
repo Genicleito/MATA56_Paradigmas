@@ -24,5 +24,5 @@ function somaLista (lista){
 	return somaListaAcum(lista, 0);
 }
 
-console.log(somaLista([1, 2, 3]);
+console.log(somaLista([1, 2, 3]));
 console.log(somaLista([]));
