@@ -11,7 +11,6 @@ function calculaMediaTurma(dados, turma) {
     var somaNotas = R.reduce((soma, aluno) => soma + aluno.nota, 0, dadosTurma);
     return somaNotas / qtdAlunos;
   }
-  // ---
 }
 // testes
 teste(8, calculaMediaTurma([{nome: "A", turma: "1", nota: 8}], "1"));
